@@ -1,0 +1,26 @@
+{
+  "name": "board-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc download-all.ts ; node download-all.js",
+    "replace-json": "tsc replace-json.ts ; node replace-json.js",
+    "serve": "http-server dl"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.31",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.5",
+    "typescript-node": "^0.1.3"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "http-server": "^0.9.0",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}

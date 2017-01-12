@@ -1,0 +1,5 @@
+#!/bin/bash
+#tsc download-all.ts
+#node download-all.js
+mkdir -p dl
+npm start | grep 'http' | grep -v 'download-all.ts' | awk '{print "curl -o dl/" $1 " " $2 " &"}'

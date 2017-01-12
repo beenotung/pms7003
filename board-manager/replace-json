@@ -1,0 +1,5 @@
+#!/bin/bash
+ls dl > dl/list
+dest="dl/package_index.json"
+npm run replace-json | grep -A100000000 "=====" | grep -v "=====" | grep -v "_____" > "$dest"
+echo "saved to $dest"
